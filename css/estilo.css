@@ -1,0 +1,143 @@
+form{
+    background: rgb(0,0,0,.5);
+    width: 300px;
+    height: 450px; 
+    border-radius: 25px;
+    padding: 8px;
+    border-bottom: #fff;
+    font-family:"Homer Simpson UI";
+    
+}
+
+body{
+    background:url(bg.jpg);
+    margin: 50px;
+}
+h1{
+	font-size: 55px;
+	color: #fff;
+}
+h2{
+	color: white;
+	font-size: 20px;
+}
+
+
+input[type="text"]{
+    background-color:white;
+    border:0px;
+    width:250px;
+    height: 60px;
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    pointer-events: none;
+    margin-bottom: 20px;
+    font-size: 26px;
+    border-radius: 10px;
+}
+
+input[type="button"]{
+    font-size: 20px;
+    font-weight:600;
+    font-family:"Homer Simpson UI";
+    width:60px;border:0px;
+    height: 60px;
+    color:black;
+    background-color:#fff;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+
+input[type="button"]:hover{
+    background-color:yellow;
+    cursor: pointer;
+}
+
+input[type="button"].arit{
+    background-color:aqua;
+    border-radius: 50px;
+}
+
+input[type="button"].igual{
+    background-color: aqua;
+    border-radius: 50px;
+    width:  105px;
+    height: 45px;
+}
+
+input[type="button"].clear{
+    background-color: red;
+    border-radius: 50px;
+}
+button{
+    background-color: SteelBlue;
+    border-radius: 50px;
+}
+
+.dark-mode-button{
+    position: relative;
+    right:10px;
+    padding: 10px;
+    border-radius: 25px;
+    background:SlateBlue;
+}
+body.dark{
+	background: #000;
+}
+
+
+.boton{
+	background: #343d5b;
+	width: 100px;
+	border-radius: 1000px;
+	border: none;
+	outline: none;
+	display: flex;
+	cursor: pointer;
+	position: relative;
+}
+
+.boton::after{
+	width: 45px;
+	height: 45px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: unset;
+	background: white;
+	border-radius: 100px;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.3);
+}
+
+.boton span{
+	margin: 6px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	color: #fff;
+	background: none;
+	display: block;
+}
+
+.boton span i{
+	background: none;
+	font-size: 25px;
+}
+
+.boton.active{
+	background: orange;
+	color: #000;
+}
+.boton.active::after{
+	right: 0;
+	left:unset;
+}
+
+html.dark-mode{
+    filter: invert(100%);
+}
+
+
